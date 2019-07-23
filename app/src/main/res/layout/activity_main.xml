@@ -13,6 +13,7 @@
         android:layout_marginStart="144dp"
         android:layout_marginLeft="144dp"
         android:layout_marginTop="128dp"
+        android:onClick="video"
         android:text="Video Yotube"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
