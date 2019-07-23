@@ -18,7 +18,7 @@ public class Main2Activity extends AppCompatActivity {
         MediaController controller=new MediaController(this);
         simpleVideoView.setMediaController(controller);
         controller.setAnchorView(simpleVideoView);
-        simpleVideoView.setVideoURI(Uri.parse("http://techslides.com/demos/sample-videos/small.mp4"));
+        simpleVideoView.setVideoURI(Uri.parse("rtsp://r3---sn-q4flrn7k.googlevideo.com/Cj0LENy73wIaNAlp_IXOmeuhUxMYDSANFC1pjDddMOCoAUIASARg-Lbz1qKco-daigELVUtBWVZFUzVKN28M/A74D2CD301A79B78DDDA1D26D132E25ABA7AE9B7.347F99BE3A0238A8655EE16CA83A3B4E329A6896/yt8/1/video.3gp"));
         //simpleVideoView.setVideoPath("https://youtu.be/S-JJkL6Y-8A");
         simpleVideoView.requestFocus();
         simpleVideoView.start();

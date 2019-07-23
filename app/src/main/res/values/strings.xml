@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AMST7</string>
+    <string name="mapa">Mapa</string>
+    <string name="title_activity_map1">Map</string>
 </resources>
