@@ -24,6 +24,7 @@
         android:layout_marginStart="148dp"
         android:layout_marginLeft="148dp"
         android:layout_marginTop="44dp"
+        android:onClick="goCalendar"
         android:text="Calendario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
