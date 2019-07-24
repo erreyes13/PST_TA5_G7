@@ -23,5 +23,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void goCalendar(View view){
+        Intent i = new Intent(this, Calendar.class);
+        startActivity(i);
+    }
+
 }
 
