@@ -22,9 +22,9 @@ public class VideoActivity extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
         Log.d(TAG,"onCreate: Starting.");
+        //Esto nos permite generar el YoutubePlayerView y reproduce el video cuando se de click en el boton PLAY
         Play= findViewById(R.id.btnPlay);
         video=findViewById(R.id.Video);
-
         iniciar=new  YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
@@ -48,6 +48,7 @@ public class VideoActivity extends YouTubeBaseActivity {
 
     }
 
+    // Esta funcion nos permite regresar al menu principal
     public void regresar(View view){
         finish( );
     }
