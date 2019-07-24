@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VideoView">
+    tools:context=".VideoActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,55 +12,66 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Video"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#111010"
         android:textSize="36sp"
-        app:fontFamily="@font/abril_fatface"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="307dp"
-        android:layout_height="271dp"
+    <view
+        android:id="@+id/Video"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        id="@+id/view"
+        android:layout_width="340dp"
+        android:layout_height="260dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
-
-    <ImageButton
-        android:id="@+id/Regresar"
-        android:layout_width="70dp"
-        android:layout_height="54dp"
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="103dp"
+        android:layout_height="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#4A7D8B"
+        android:background="#9EC4B1"
+        android:text="PLAY"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Video" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="114dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="#9EC4B1"
         android:onClick="regresar"
+        android:text="Volver"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.641"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        app:layout_constraintTop_toBottomOf="@+id/Video" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
